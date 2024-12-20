@@ -96,7 +96,7 @@ def send_email_notification(to_email, subject, message, recorder_name):
             return False
 
         msg = MIMEMultipart()
-        msg['From'] = f"{recorder_name} <{GMAIL_USER}>"
+        msg['From'] = f"{recorder_name} <noreply@school.edu.sg>"
         msg['To'] = to_email
         msg['Subject'] = subject
 
